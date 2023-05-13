@@ -1,0 +1,9 @@
+{
+  "project_base_name": "my_project",
+  "project_name": "core_config",
+  "app_name": "my_app",
+  "project_type": [
+    "ddd",
+    "django"
+  ]
+}
