@@ -61,7 +61,7 @@ stop-prod:
 	@docker-compose -f docker-compose.prod.yml down
 
 template:
-	python run_cookiecutter.py
+	python streamline/run_cookiecutter.py
 
 all: help
 
