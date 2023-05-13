@@ -18,7 +18,6 @@ make stop-dev       	Stop dev environment
 make stop-prod      	Stop prod environment
 make build-prod     	Build and run prod environment
 make all            	Show help
-make template       	Generate project from template
 
 endef
 
@@ -60,9 +59,6 @@ stop-dev:
 stop-prod:
 	@docker-compose -f docker-compose.prod.yml down
 
-template:
-	python run_cookiecutter.py
-
 all: help
 
-.PHONY: help lint format test super-user make-migrations migrate build-dev build-prod stop-dev stop-prod all template
+.PHONY: help lint format test super-user make-migrations migrate build-dev build-prod stop-dev stop-prod all

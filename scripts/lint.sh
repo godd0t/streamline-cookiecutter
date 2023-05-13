@@ -1,6 +1,7 @@
 #!/bin/bash -e
 
-APP_PATH="{{cookiecutter.project_base_name}}"
+PACKAGE_PATH="streamline"
+TEMPLATE_PATH="{{cookiecutter.project_base_name}}"
 
-ruff $APP_PATH
-black $APP_PATH --check
+ruff "$PACKAGE_PATH" "$TEMPLATE_PATH"
+black "$PACKAGE_PATH" "$TEMPLATE_PATH" --check

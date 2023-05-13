@@ -47,7 +47,7 @@ omit = [
     "manage.py",
     "*__init__.py",
 ]
-source = ["{{cookiecutter.project_base_name}}"]
+source = ["streamline"]
 
 
 # LINTING
@@ -65,12 +65,12 @@ extend-exclude = '''
 format = "grouped"
 line-length = 88 # black default
 extend-exclude = [
-    "src/migrations/",
-    "src/media/*",
-    "src/static/*",
-    "src/manage.py",
-    "*/test_data/*",
-    "*__init__.py",
+    ".migrations",
+    ".media",
+    ".static",
+    "manage.py",
+    ".test_data",
+    "__init__.py",
 ]
 
 select = ["E", "F"]
@@ -94,5 +94,5 @@ max-complexity = 10
 
 
 [tool.ruff.isort]
-force-to-top = ["src"]
-known-first-party = ["src"]
+force-to-top = ["streamline"]
+known-first-party = ["streamline"]

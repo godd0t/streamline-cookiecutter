@@ -1,9 +1,20 @@
 {
   "project_base_name": "my_project",
-  "project_name": "core_config",
-  "app_name": "my_app",
   "project_type": [
     "ddd",
     "django"
-  ]
+  ],
+  "project_name": "{% if cookiecutter.project_type == 'ddd' %}my_project{% else %}core_config{% endif %}",
+  "app_name": "my_app",
+  "use_git": false,
+  "use_celery": false,
+  "use_celery_beat": false,
+  "use_postgres": true,
+  "use_pytest": true,
+  "use_ruff": true,
+  "use_black": true,
+  "use_docker": false,
+  "use_make": false,
+  "use_nginx": true,
+  "use_traefik": "{{cookiecutter.use_nginx}}"
 }
