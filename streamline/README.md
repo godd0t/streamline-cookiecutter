@@ -1,5 +1,9 @@
 # Streamline Cookiecutter
 
+[![Generate Template](https://img.shields.io/badge/Generate%20Template-Click%20Here-brightgreen)](
+(python3 -m streamline.run_cookiecutter)
+)
+
 This is a cookiecutter template for Django projects. The main goal is to have a
 streamlined process for creating new Django projects, with a focus on fast
 development and deployment. The template is based on the
